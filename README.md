@@ -4,17 +4,21 @@ A Flutter-based professional profile page showcasing user details in an organize
 
 ## Features
 
-1. **Header Section**
-   - Circular profile picture with name, title, and location.
+### 1. Home
+   - Main page introducing the profile.
+   - Includes a welcome message and brief overview of the profile owner.
 
-2. **About Section**
-   - Brief professional summary and current role.
+### 2. Skills
+   - Displays a list of technical skills with visual indicators for proficiency levels.
+   - Well-organized layout with consistent spacing.
 
-3. **Skills Section**
-   - List of technical skills with proficiency indicators.
+### 3. Projects
+   - Showcases completed projects with descriptions.
+   - Can include project links, images, or brief summaries.
 
-4. **Education Section**
-   - Latest degree, institution name, and year of completion.
+### 4. Contact
+   - Provides contact information and a way to reach out (e.g., email, phone).
+   - May include social media links or a contact form.
 
 ## Getting Started
 
