@@ -8,10 +8,6 @@ const List<Map> platformItems = [
     "title": "Web Dev",
   },
   {
-    "img": "assets/ios_icon.png",
-    "title": "IOS Dev",
-  },
-  {
     "img": "assets/desktop_icon.png",
     "title": "Desktop Dev",
   }
@@ -28,26 +24,38 @@ const List<Map> skillItems = [
   },
   {
     "img": "assets/html5.png",
-    "title": "HTML5",
+    "title": "HTML",
   },
   {
     "img": "assets/css3.png",
-    "title": "CSS3",
+    "title": "CSS",
   },
   {
     "img": "assets/javascript.png",
     "title": "JS",
   },
   {
-    "img": "assets/hugo.png",
-    "title": "Hugo",
+    "img": "assets/spring_boot_logo.png",
+    "title": "SpringBoot",
+  },
+  {
+    "img": "assets/angular_logo.png",
+    "title": "Angular",
   },
   {
     "img": "assets/docker.png",
     "title": "Docker",
   },
   {
+    "img": "assets/mysql_logo.png",
+    "title": "MySql",
+  },
+  {
     "img": "assets/python.png",
     "title": "Python",
+  },
+  {
+    "img": "assets/tailwind_logo.png",
+    "title": "tailWind",
   }
 ];
