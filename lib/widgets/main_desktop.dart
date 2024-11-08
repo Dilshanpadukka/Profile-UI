@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:profile_ui/constants/colors.dart';
 
-class MainDekstop extends StatelessWidget {
-  const MainDekstop({super.key});
+class MainDesktop extends StatelessWidget {
+  const MainDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {

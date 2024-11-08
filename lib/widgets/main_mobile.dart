@@ -10,7 +10,7 @@ class MainMobile extends StatelessWidget {
     final screenWidth = screenSize.width;
     final screenHeight = screenSize.height;
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 40, vertical: 30),
+      margin: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
       height: screenHeight,
       constraints: const BoxConstraints(
         minHeight: 560.0,
@@ -19,21 +19,12 @@ class MainMobile extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          //profile image
-          ShaderMask(
-            shaderCallback: (bounds) {
-              return LinearGradient(colors: [
-                CustomColor.scaffoldBg.withOpacity(0.5),
-                CustomColor.scaffoldBg.withOpacity(0.5),
-              ]).createShader(bounds);
-            },
-            blendMode: BlendMode.srcATop,
-            child: Image.asset(
-              "assets/profile logo.png",
-              width: screenWidth,
-            ),
+          // Profile image without ShaderMask
+          Image.asset(
+            "assets/profile logo.png",
+            width: screenWidth,
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           const Text(
@@ -53,10 +44,14 @@ class MainMobile extends StatelessWidget {
             height: 50.0,
             child: ElevatedButton(
               onPressed: () {},
-              child: Text("Get in touch",
-                  style:
-                      TextStyle(color: CustomColor.whitePrimary, fontSize: 20),
-                  textAlign: TextAlign.center),
+              child: const Text(
+                "Get in touch",
+                style: TextStyle(
+                  color: CustomColor.whitePrimary,
+                  fontSize: 20,
+                ),
+                textAlign: TextAlign.center,
+              ),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 14, 60, 223),
               ),
