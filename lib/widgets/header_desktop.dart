@@ -4,8 +4,6 @@ import 'package:profile_ui/constants/nav_items.dart';
 import 'package:profile_ui/styles/styles.dart';
 import 'package:profile_ui/widgets/site_logo.dart';
 
-import '../constants/colors.dart';
-import '../constants/nav_items.dart';
 
 class HeaderDesktop extends StatelessWidget {
   const HeaderDesktop({

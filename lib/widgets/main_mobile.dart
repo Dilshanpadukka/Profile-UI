@@ -44,6 +44,9 @@ class MainMobile extends StatelessWidget {
             height: 50.0,
             child: ElevatedButton(
               onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color.fromARGB(255, 14, 60, 223),
+              ),
               child: const Text(
                 "Get in touch",
                 style: TextStyle(
@@ -51,9 +54,6 @@ class MainMobile extends StatelessWidget {
                   fontSize: 20,
                 ),
                 textAlign: TextAlign.center,
-              ),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 14, 60, 223),
               ),
             ),
           )

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:profile_ui/utils/project_utils.dart';
 
 import '../constants/colors.dart';
-import 'dart:js' as js;
 
 class ProjectCardWidget extends StatelessWidget {
   const ProjectCardWidget({
@@ -26,8 +25,8 @@ class ProjectCardWidget extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           // project img
-          Image.asset(
-            project.image,
+          Image.network(
+            project.image, // Use network image here
             height: 140,
             width: 260,
             fit: BoxFit.cover,
@@ -72,42 +71,7 @@ class ProjectCardWidget extends StatelessWidget {
                   ),
                 ),
                 const Spacer(),
-                if (project.iosLink != null)
-                  InkWell(
-                    onTap: () {
-                      js.context.callMethod("open", [project.iosLink]);
-                    },
-                    child: Image.asset(
-                      "assets/ios_icon.png",
-                      width: 19,
-                    ),
-                  ),
-                if (project.androidLink != null)
-                  Padding(
-                    padding: const EdgeInsets.only(left: 6),
-                    child: InkWell(
-                      onTap: () {
-                        js.context.callMethod("open", [project.androidLink]);
-                      },
-                      child: Image.asset(
-                        "assets/android_icon.png",
-                        width: 17,
-                      ),
-                    ),
-                  ),
-                if (project.webLink != null)
-                  Padding(
-                    padding: const EdgeInsets.only(left: 6),
-                    child: InkWell(
-                      onTap: () {
-                        js.context.callMethod("open", [project.webLink]);
-                      },
-                      child: Image.asset(
-                        "assets/web_icon.png",
-                        width: 17,
-                      ),
-                    ),
-                  ),
+                // Removed the icons for ios, android, and web links
               ],
             ),
           )

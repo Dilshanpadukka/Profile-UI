@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:profile_ui/constants/colors.dart';
-import 'package:profile_ui/constants/nav_items.dart';
 import 'package:profile_ui/constants/size.dart';
 import 'package:profile_ui/constants/sns_links.dart';
-import 'package:profile_ui/styles/styles.dart';
 import 'package:profile_ui/widgets/contact_section.dart';
 import 'package:profile_ui/widgets/drawer_mobile.dart';
 import 'package:profile_ui/widgets/header_desktop.dart';
@@ -12,16 +9,11 @@ import 'package:profile_ui/widgets/header_mobile.dart';
 import 'package:profile_ui/widgets/main_desktop.dart';
 import 'package:profile_ui/widgets/main_mobile.dart';
 import 'package:profile_ui/widgets/projects_section.dart';
-import 'package:profile_ui/widgets/site_logo.dart';
 import 'package:profile_ui/widgets/skills_desktop.dart';
 import 'package:profile_ui/widgets/skills_mobile.dart';
 import 'dart:js' as js;
-import '../constants/size.dart';
 
-import '../widgets/drawer_mobile.dart';
 import '../widgets/footer.dart';
-import '../widgets/header_desktop.dart';
-import '../widgets/header_mobile.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
